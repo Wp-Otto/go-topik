@@ -24,7 +24,7 @@ func (m MinHeap) Less(i, j int) bool { return m.Keys[i].Times < m.Keys[j].Times 
 func (m MinHeap) Swap(i, j int)      { m.Keys[i], m.Keys[j] = m.Keys[j], m.Keys[i] }
 
 func (m *MinHeap) Push(x interface{}) {
-	// Pusm and Pop use pointer receivers because tmey modify tme slice's lengtm,
+	// Push and Pop use pointer receivers because they modify the slice's length,
 	// not just its contents.
 	(*m).Keys = append((*m).Keys, x.(handMap))
 }
