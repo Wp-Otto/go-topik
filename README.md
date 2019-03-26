@@ -1,4 +1,4 @@
-<p align="center">go-topik</p>
+<p align="center"><big>**go-topik**</big></p>
 
 <p align="center">
 <a href="https://godoc.org/github.com/Wp-Otto/go-topik"><img src="https://img.shields.io/badge/topk-godoc-brightgreen.svg" alt="godoc"></a>
@@ -19,7 +19,7 @@ Default Count-Min Sketch distribution 8M Memory
 在堆里查找该元素，如果找到，把堆里的计数器也增1，并调整堆；如果没有找到，把这个元素的次数跟堆顶元素比较，如果大于堆丁元素的出现次数，则把堆丁元素替换为该元素，并调整堆
 空间复杂度O(n)。HashMap需要存放下所有元素，需要O(n)的空间，堆需要存放k个元素，需要O(k)的空间，跟O(n)相比可以忽略不急，总的时间复杂度是O(n)
 时间复杂度O(n)。每次来一个新元素，需要在HashMap里查找一下，需要O(1)的时间；然后要在堆里查找一下，O(k)的时间，有可能需要调堆，又需要O(logk)的时间，总的时间复杂度是O(n(k+logk))，k是常量，所以可以看做是O(n)。
-如果元素数量巨大，单机内存存不下，怎么办？ 有两个办法，见方案3。
+如果元素数量巨大，单机内存存不下，怎么办？ 有两个办法，见方案2。
 
 方案2: Count-Min Sketch + Heap
 既然方案1中的HashMap太大，内存装不小，那么可以用Count-Min Sketch算法代替HashMap，
