@@ -1,4 +1,9 @@
-# go-topik
+<p align="center">go-topik</p>
+
+<p align="center">
+<a href="https://godoc.org/github.com/Wp-Otto/go-topik"><img src="https://img.shields.io/badge/topk-godoc-brightgreen.svg" alt="godoc"></a>
+</p>
+
 Streaming Topk service using Count-min sketch probabilistic data structure 
 
 Default Count-Min Sketch distribution 8M Memory
