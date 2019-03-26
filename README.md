@@ -1,4 +1,4 @@
-<p align="center"><big>**go-topik**</big></p>
+<p align="center"><big>go-topik</big></p>
 
 <p align="center">
 <a href="https://godoc.org/github.com/Wp-Otto/go-topik"><img src="https://img.shields.io/badge/topk-godoc-brightgreen.svg" alt="godoc"></a>
